@@ -1,5 +1,5 @@
 import { endAdventure } from '..';
-import { playCroquet } from './4_croquet';
+import { workout } from './7_workout_extension'
 import { askQuestion, clear, print } from '../console';
 
 const drinks = ['Coffee', 'Tea', 'Water', 'Lemonade'] as const;
@@ -56,8 +56,8 @@ export function attendATeaParty() {
 	print(
 		`🥳 Every seat had a lovely cup of tea, and a great time was had by all. 🥳 `
 	);
-	print(`🏑 Time for a nice game of croquet! 🏑`);
-	return askQuestion('Press ENTER to continue! ', playCroquet);
+	print(`It's time to workout and gain some strength 💪 `);
+	return askQuestion('Press ENTER to continue! ', workout);
 }
 
 function setTheTable(): Table {
